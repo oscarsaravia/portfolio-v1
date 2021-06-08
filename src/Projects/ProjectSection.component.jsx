@@ -20,7 +20,7 @@ const ProjectSection = () => (
         desc="Used Django and Django rest-framework to build an Api."
         image={leafapi}
         gitlink="https://github.com/donaldosebas/LeafApi"
-        weblink="leaf-musicapp.herokuapp.com/"
+        weblink="https://leaf-musicapp.herokuapp.com/"
       />
       <ProjectCard
         className="card"
