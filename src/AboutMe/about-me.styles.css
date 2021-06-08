@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "title content-1 content-1"
+    "my-photo content-2 content-2"
+    "content-3 content-4 content-4";
+  grid-gap: 0.2rem;
+  background-color: black;
+}
+
+.title-about {
+  grid-area: title;
+  position: relative;
+  width: 100%;
+}
+
+.my-photo {
+  grid-area: my-photo;
+  position: relative;
+}
+
+.content-1 {
+  grid-area: content-1;
+  color: white;
+  position: relative;
+}
+
+.content-2 {
+  grid-area: content-2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-title {
+  font-size: 7rem;
+  font-family: "Oswalr", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.skill-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.skill-list li {
+  display: block;
+  font-size: 2.5rem;
+  left: 50%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.skill-list li:hover {
+  color: crimson;
+}
+
+.content-3 {
+  grid-area: content-3;
+  position: relative;
+  color: white;
+}
+
+.description {
+  font-size: 25px;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content-4 {
+  grid-area: content-4;
+}
+
+.about-me {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 10rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  line-height: 90px;
+  left: 48%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.me {
+  color: crimson;
+  display: block;
+  text-align: center;
+}
+
+.photo {
+  height: 290px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.4fr 0.3fr 1fr 0fr;
+    grid-template-areas:
+      "title"
+      "my-photo"
+      "content-3"
+      "content-1"
+      "content-2"
+      "content-4";
+  }
+  .about-me {
+    font-size: 40px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+  }
+  .me {
+    display: inline;
+  }
+  .photo {
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+  .skill-list {
+    top: 10%;
+  }
+  .skill-list li {
+    font-size: 1.5rem;
+  }
+  .skills-title {
+    font-size: 2rem;
+  }
+  .content-2 {
+    border-left: none;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .content-3 {
+    padding: 0.3rem;
+  }
+}
+
+@keyframes animate-text {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  80%,
+  90% {
+    width: 90%;
+  }
+}
