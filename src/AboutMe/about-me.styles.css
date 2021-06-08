@@ -11,6 +11,7 @@
     "content-3 content-4 content-4";
   grid-gap: 0.2rem;
   background-color: black;
+  padding: 15px;
 }
 
 .title-about {
@@ -74,16 +75,18 @@
   grid-area: content-3;
   position: relative;
   color: white;
+  align-content: center;
 }
 
 .description {
   font-size: 25px;
-  position: absolute;
   font-family: "Roboto", sans-serif;
   text-align: center;
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
+  margin: 10px;
+  position: relative;
 }
 
 .content-4 {
