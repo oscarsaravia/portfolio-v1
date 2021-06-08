@@ -39,7 +39,7 @@ const AboutMe = () => (
         watch series, hang out with my friends, watching sports and specially programming.
       </p>
     </div>
-    <div className="content-4">Content4</div>
+    <div className="content-4"> </div>
   </section>
 )
 
